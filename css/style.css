@@ -1,11 +1,45 @@
+@font-face{
+    font-family: "Good-Times";
+    src: url('../fonts/Good-Times/good-times-rg.ttf');
+    src: url('../fonts/Good-Times/neuropolitical-rg.ttf') format();
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+    font-family: "Orbitron";
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
+    src: url('../fonts/Orbitron/static/Orbitron-Black.ttf') format('truetype'),
+    url('../fonts/Orbitron/static/Orbitron-Bold.ttf'), url('../fonts/Orbitron/static/Orbitron-ExtraBold.ttf'), url('../fonts/Orbitron/static/Orbitron-Medium.ttf'),
+    url('../fonts/Orbitron/static/Orbitron-Regular.ttf'), url('../fonts/Orbitron/static/Orbitron-SemiBold.ttf');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+    font-family: "Saira";
+    src: url('../fonts/Saira/Saira-Black.ttf');
+    src: url('../fonts/Saira/Saira-Bold.ttf'), url('../fonts/Saira/Saira-ExtraBold.ttf'), url('../fonts/Saira/Saira-ExtraLight.ttf'),
+    url('../fonts/Saira/Saira-Light.ttf'), url('../fonts/Saira/Saira-Medium.ttf'), url('../fonts/Saira/Saira-Regular.ttf'),
+    url('../fonts/Saira/Saira-SemiBold.ttf'), url('../fonts/Saira/Saira-Thin.ttf');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+    font-family: "spacerangerlaserital";
+    src: url('../fonts/space-ranger-font/spacerangerlaserital.ttf');
+    font-weight: normal;
+	font-style: normal;
+}
+
 header{
 	position: absolute;;
 	width:100%;
 	top:0;
     z-index:11;
     height: 114px;
-    background-image: url("../assets/option-bar.png");
-    
+    background-image: url("../assets/option-bar.png");   
 }
 
 .dropdown-menu {
@@ -30,7 +64,7 @@ a.dropdown-item:hover {
 }
 
 .section1 {
-    background-image: url("../assets/text-box.png");
+    position: relative;
 }
 
 .section2 {
@@ -49,3 +83,53 @@ a.dropdown-item:hover {
 .subheader1{
     font-weight: 500;
 }
+
+.headnav{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.headnav li{
+    display: inline;
+    font-weight: 500;
+    margin-left: 1em; 
+}
+
+.headnav li a{
+    color : #fff;
+}
+
+.side_headers{
+    font-family: "Orbitron";
+    color: #a3d9ea;
+    /* font-weight: lighter; */
+    margin-left: 2em;
+}
+
+.text_style{
+    font-family: "Saira";
+    /* color: #a3d9ea; */
+}
+
+.img_frame{
+    position: relative;
+    display: block;
+}
+
+.overlay_image {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    /* padding-right: 1px; */
+    margin: 1%;
+  }
+
+  .img-thumbnail{
+      background-color: transparent;
+  }
+
+  .oneimg{
+    padding-right: 0;
+    padding-left: 0.5px;
+    padding-bottom: 0px;
+  }
