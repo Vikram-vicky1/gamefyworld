@@ -8,19 +8,20 @@
 
 @font-face{
     font-family: "Orbitron";
-    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
-    src: url('../fonts/Orbitron/static/Orbitron-Black.ttf') format('truetype'),
+    src: url('../fonts/Orbitron/static/Orbitron-Regular.ttf');
+    /* src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf'); */
+    /* src: url('../fonts/Orbitron/static/Orbitron-Black.ttf') format('truetype'),
     url('../fonts/Orbitron/static/Orbitron-Bold.ttf'), url('../fonts/Orbitron/static/Orbitron-ExtraBold.ttf'), url('../fonts/Orbitron/static/Orbitron-Medium.ttf'),
-    url('../fonts/Orbitron/static/Orbitron-Regular.ttf'), url('../fonts/Orbitron/static/Orbitron-SemiBold.ttf');
-    font-weight: normal;
-	font-style: normal;
+    url('../fonts/Orbitron/static/Orbitron-Regular.ttf'), url('../fonts/Orbitron/static/Orbitron-SemiBold.ttf'); */
+    /* font-weight: normal;
+	font-style: normal; */
 }
 
 @font-face{
     font-family: "Saira";
-    src: url('../fonts/Saira/Saira-Black.ttf');
+    src: url('../fonts/Saira/Saira-Regular.ttf');
     src: url('../fonts/Saira/Saira-Bold.ttf'), url('../fonts/Saira/Saira-ExtraBold.ttf'), url('../fonts/Saira/Saira-ExtraLight.ttf'),
-    url('../fonts/Saira/Saira-Light.ttf'), url('../fonts/Saira/Saira-Medium.ttf'), url('../fonts/Saira/Saira-Regular.ttf'),
+    url('../fonts/Saira/Saira-Light.ttf'), url('../fonts/Saira/Saira-Medium.ttf'), url('../fonts/Saira/Saira-Black.ttf'),
     url('../fonts/Saira/Saira-SemiBold.ttf'), url('../fonts/Saira/Saira-Thin.ttf');
     font-weight: normal;
 	font-style: normal;
@@ -40,6 +41,16 @@ header{
     z-index:11;
     height: 114px;
     background-image: url("../assets/option-bar.png");   
+}
+
+body{
+    background-color: #0e132d;
+}
+
+.bg_body{
+    background-image: url('../assets/elemnt-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .dropdown-menu {
@@ -64,6 +75,7 @@ a.dropdown-item:hover {
 }
 
 .section1 {
+    background-size: cover;
     position: relative;
 }
 
@@ -102,13 +114,15 @@ a.dropdown-item:hover {
 .side_headers{
     font-family: "Orbitron";
     color: #a3d9ea;
-    /* font-weight: lighter; */
-    margin-left: 2em;
+    margin-left: 1em;
+    font-size: 30px;
 }
 
 .text_style{
     font-family: "Saira";
-    /* color: #a3d9ea; */
+    color: #a3d9ea;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .img_frame{
@@ -124,6 +138,11 @@ a.dropdown-item:hover {
     margin: 1%;
   }
 
+  .overlay_text {
+      position: absolute;
+      bottom: 0%;
+  }
+
   .img-thumbnail{
       background-color: transparent;
   }
@@ -132,4 +151,11 @@ a.dropdown-item:hover {
     padding-right: 0;
     padding-left: 0.5px;
     padding-bottom: 0px;
+  }
+
+  .twoimg{
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 8px;
+      padding-top: 4px;
   }
